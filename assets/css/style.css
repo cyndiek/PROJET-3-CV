@@ -1,117 +1,470 @@
-.violet {
-background-color:black;
+@font-face {
+    font-family: Medhurst; 
+    src: url(../fonts/Medhurst-regular.ttf)
 }
 
-.prenom {
-    font-family: 'Archivo Black', sans-serif; 
-    color: white;
-    text-shadow: 0.05em 0 0 rgb(255 0 0 / 75%), -0.025em -0.05em 0 rgb(0 255 0 / 75%), 0.025em 0.05em 0 rgb(0 0 255 / 75%);
-    font-size: 60px;
+@font-face {
+    font-family: lessti;
+    src: url(../fonts/lessti.regular.otf)
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf)
+}
+
+* {
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+}
+
+
+/* -------------------------NAVBAR-------------------- */
+
+.bgBlue {
+    background-color: #CDD2D0;
+}
+
+.fBlack {
+    color: black;
+}
+
+header {
+    font-family: "montserrat";
+    font-size: 1.4rem;
+    color: white;
+    position: sticky;
+    top:0;
+    letter-spacing:2px;
+    display:none;
+
+}
+
+
+
+.navbar > .saveIcon {
+    width:3rem;
+    margin-left: 60px;
+}
+
+.saveIcon:hover {
+    width:4rem;
+}
+
+
+.nav-item {
+    margin-left:100px;
+    
+}
+
+
+
+/*------------------------------- FIN NAVBAR-------------------------------------- */
+
+
+
+
+
+/* -*----------------------------------la première page de loading------------------------------- */
+
+.firstPage {
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F7EEE6;
+    height: 100vh;
+    align-items: center;
+}
+
+.logo {
+    height: 50%;
+    cursor: pointer;
+    margin-top: 100px;
+
+
+}
+
+
+/* -----------------------HOME------------------------ */
+
+
+.violet {
+background-color:#F7EEE6;
+display:none;
+background-image: url(../img/stars.svg);
+
+} 
+
+
+.name{
+    display:flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+
+.prenom{
+    margin-left: 300px;
+    height: 9rem;
+}
+
 
 .nom {
-    font-family: 'Archivo Black', sans-serif; 
-    color: white;
-    text-shadow: 0.05em 0 0 rgb(255 0 0 / 75%), -0.025em -0.05em 0 rgb(0 255 0 / 75%), 0.025em 0.05em 0 rgb(0 0 255 / 75%);
-    font-size: 60px;
+    margin-left: 300px;
+    height: 7rem;
+    } 
+
+.job {
+    font-family: "medhurst";
+    font-size: 100px;
+    margin-top: 300px;
+    color: #CAAA45;
+}    
+
+
+
+/* ABOUT */
+
+#aboutme {
+    background-color: #CDD2D0;
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+    padding: 100px;
+
+
+
+}
+
+.words {
+    font-family: 'Medhurst';
+    font-size:80px;
+    color : #788AB1;
+}
+
+.aboutParagraph {
+    font-family: 'montserrat';
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 50px;
     margin-top: 80px;
+    line-height: 70px;
 }
 
-.glitch {
-    text-shadow: 0.05em 0 0 rgb(255 0 0 / 75%), -0.025em -0.05em 0 rgb(0 255 0 / 75%), 0.025em 0.05em 0 rgb(0 0 255 / 75%);
-    animation: glitch 500ms infinite;
+.special {
+    font-family: 'montserrat';
+    font-size: 30px;
+    
+}
+
+.citation {
     color: white;
-    font-family: 'Archivo Black', sans-serif; 
+    font-family: "lessti";
+    font-size: 50px;
+    display: block;
+    text-align: center;
+
 }
 
-@keyframes glitch {
+
+
+/*----------------------------------- SKILLS----------------------------------- */
+
+.skillSection {
+    background-color: #F7EEE6;
+    padding: 90px;
+    overflow: hidden;
+}
+
+.titleSkills {
+    font-family: 'Medhurst';
+    font-size: 90px;
+    margin-top:100px;
+    margin-bottom:80px;
+    text-align: center;
+    color: #CAAA45;
+
+}
+
+
+
+#backgroundImg {
+
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/illufront.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+
+}
+
+#backgroundImg2 {
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/uifront.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+#backgroundImg3 {
+
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/mdfront.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+
+}
+
+#backgroundImg3 {
+
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/gpfront.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+/* -----------------------EXPERIENCE----------------- */
+
+.titleExp {
+    font-family: "medhurst";
+    font-size: 90px;
+    margin-bottom:80px;
+    color: #788AB1;
+}
+
+
+
+.blocExp {
+
+    padding-top: 100px;
+    background-color:#CDD2D0;
+
+
+
+} 
+
+.bloc {
+    box-sizing: border-box;
+    border-radius:10px;
+    border: 3px dotted;
+    border-color:#CDD2D0;
+    ;
+    text-align: center;
+    padding:20px;
+    opacity:0;
+    margin-bottom: 100px;
+    
+
+
+}
+
+
+
+#bloc1{
+    transition: opacity 1s linear 0s;
+    background-color:#F7EEE6;
+    margin-bottom: 100px;
+    height: 200px;
+    width: 550px;
+    margin-right: 170px;
+
+
+    
+}
+#bloc2 {
+    transition: opacity 1s linear 0.5s;
+    background-color:#F7EEE6;
+    margin-bottom:100px;
+    height: 200px;
+    width: 550px;
+    
+}
+#bloc3 {
+    transition: opacity 1s linear 1s;
+    background-color:#F7EEE6;
+    height: 200px;
+    width: 550px;
+    margin-right: 170px;
+}
+
+#bloc4 {
+    transition: opacity 1s linear 1.5s;
+    background-color:#F7EEE6;
+    height: 200px;
+    width: 550px;
+}
+
+.blocAppear {
+    opacity: 1;
+}
+
+.date {
+    font-family:"medhurst";
+    font-size: 25px;
+    color: #788AB1;
+    font-weight: bold;
+}
+
+.company {
+    font-family:"montserrat";
+    font-size: 15px;
+    color: #788AB1;
+    font-weight: bold;
+
+}
+
+.position {
+    font-family:"montserrat";
+    font-size: 20px;
+    color: #CAAA45;
+    font-weight: bold;
+
+}
+
+
+
+
+/* --------------------EFFET TYPED WRITING ---------------------- */
+
+
+.typed:after {
+content: "";
+animation: abomination1 15s infinite;
+animation-fill-mode: forwards;
+}
+
+
+@keyframes abomination1 {
     0% {
-        text-shadow: 0.05em 0 0 rgb(255 0 0 / 75%), -0.05em -0.025em 0 rgb(0 255 0 / 75%), -0.025em 0.05em 0 rgb(0 0 255 / 75%);
+    content: " U";
+    }
+    2% {
+    content: " UI";
+    }
+    4% {
+    content: " UI D";
+    }
+    6% {
+    content: "UI DE";
+    }
+    8% {
+    content: " UI DES";
+    }
+    10% {
+    content: " UI DESI";
+    }
+    12% {
+    content: " UI DESIG";
     }
     14% {
-        text-shadow: 0.05em 0 0 rgb(255 0 0 / 75%), -0.05em -0.025em 0 rgb(0 255 0 / 75%), -0.025em 0.05em 0 rgb(0 0 255 / 75%);
+    content: " UI DESIGN";
     }
-    15% {
-        text-shadow: -0.05em -0.025em 0 rgb(255 0 0 / 75%), 0.025em 0.025em 0 rgb(0 255 0 / 75%), -0.05em -0.05em 0 rgb(0 0 255 / 75%);
+    16% {
+    content: " UI DESIGNE";
     }
-    49% {
-        text-shadow: -0.05em -0.025em 0 rgb(255 0 0 / 75%), 0.025em 0.025em 0 rgb(0 255 0 / 75%), -0.05em -0.05em 0 rgb(0 0 255 / 75%);
+    18% {
+    content: " UI DESIGNER";
+    }
+    20% {
+    content: " UI DESIGN";
+    }
+    24% {
+    content: " UI DES";
+    }
+    28% {
+    content: " UI";
+    }
+    32% {
+    content: "";
+    }
+    34% {
+    content: " C";
+    }
+    36% {
+    content: " CR";
+    }
+    38% {
+    content: " CRE";
+    }
+    40% {
+    content: " CREA";
+    }
+    42% {
+    content: " CREAT";
+    }
+    44% {
+    content: " CREATI";
+    }
+    46% {
+    content: " CREATIV";
     }
     50% {
-        text-shadow: 0.025em 0.05em 0 rgb(255 0 0 / 75%), 0.05em 0 0 rgb(0 255 0 / 75%), 0 -0.05em 0 rgb(0 0 255 / 75%);
+    content: " CREATIVE";
     }
-    99% {
-        text-shadow: 0.025em 0.05em 0 rgb(255 0 0 / 75%), 0.05em 0 0 rgb(0 255 0 / 75%), 0 -0.05em 0 rgb(0 0 255 / 75%);
+    54% {
+    content: " CREATIV";
+    }
+    58% {
+    content: "CREATI";
+    }
+    62% {
+    content: "CREA";
+    }
+    66% {
+    content: "CR";
+    }
+    70% {
+    content: "";
+    }
+    72% {
+    content: "G";
+    }
+    74% {
+    content: " GR";
+    }
+    76% {
+    content: "GRA";
+    }
+    78% {
+    content: "GRAP";
+    }
+    80% {
+    content: "GRAPH";
+    }
+    84% {
+    content: "GRAPHIS";    
+    }
+    88% {
+    content: "GRAPHIST";
+    }
+    90% {
+    content: "GRAPHISTE";
+    }
+    94% {
+    content: "GRAPHI";
+    }
+    98% {
+        content: "GR";
     }
     100% {
-        text-shadow: -0.025em 0 0 rgb(255 0 0 / 75%), -0.025em -0.025em 0 rgb(0 255 0 / 75%), -0.025em -0.05em 0 rgb(0 0 255 / 75%);
-
-}
-}
-span::before {
-    content: "creative";
-    animation: animate infinite 3s;
-    padding-left: 10px;
-}
-
-
-@keyframes animate {
-
-    0% {
-        content: "creative";
-    }
-
-    50% {
-        content: "sociable";
-    }
-
-    75% {
-        content: "Geeks";
+    content: "";
     }
 }
 
 
 
-/* loader */
-/* 
-.loader {
-    position : absolute;
-    width:100%;
-    height:100%;
-    background-color: black;
-    display : flex;
-    justify-content : center;
-    align-items : center;
-        
-}
-
-.load1 {
-    animation : flash1 1.2s linear infinite;
-
-}
-
-.load2 {
-    animation : flash2 1.2s linear infinite;
-}
-
-@keyframes flash1 {
-    0% {
-        display:none;
-    }
-    50% { 
-        diplay:block;
-    }
-    100%{
-        display:none;
-    }
-    spin {
-        transform: rotate(360deg);
-        }
-
-}
-
-
-
- */
 
 
